@@ -19,24 +19,27 @@
 // EXERCICIO 3
 // let n1 = parseFloat(prompt('Digite aqui o seu salário'));
 // let prestacao = parseFloat(prompt('Digite aqui o valor da prestação'));
-// let valorpercentual = n1 * (30/100);
- // if (prestacao > valorpercentual){
-//     alert('Empréstimo concedido')
-// } else {
+//  if (prestacao > n1 * 0.30){
 //     alert('Empréstimo não concedido')
+// } else {
+//     alert('Empréstimo concedido')
 // }
 
 // EXERCICIO 4
+// let numero1 = parseInt(prompt('Digite o número aqui'));
+// let valor3 = 3;
+// let valor5 = 5;
+
 // if ((numero1 % valor5) == 0 && (numero1 % valor3) == 0){
-//     console.log(`Valor inválido`)
+//     alert(`Valor inválido`)
 // } else if ((numero1 % valor3) == 0){
-//     console.log(`Valor divisível por 3`)
+//     alert(`Valor divisível por 3`)
 // } else if ((numero1 % valor5) == 0){
-//     console.log(`Valor divisível por 5`)
-// } else if (total == 0){
-//     console.log(`${numero1} Par`);
+//     alert(`Valor divisível por 5`)
+// } else if (numero1 % 2 === 0){
+//     alert(`${numero1} Par`);
 // } else {
-//     console.log(`${numero1} Impar`);
+//     alert(`${numero1} Impar`);
 // }
 
 // EXERCICIO 5
@@ -68,13 +71,14 @@
 
 // EXERCICIO 7
 // let real = parseFloat(prompt('Digite o valor em real para ser convertido em dólar'));
-// let cotacao = 5.40;
+// let cotacao = parseFloat(prompt('Digite o valor da cotação atual do Dólar'));
 // let dolar = real * cotacao;
-// alert(`R$${real} é equivalente a R$${dolar}, tendo ${cotacao} como cotação`)
+// alert(`R$${real} é equivalente a R$${dolar}, tendo ${cotacao} como cotação`);
 
 // EXERCICIO 8
 
-// function calculaPulverizacao(tipo, area){
+// let tipo = parseInt(prompt('Digite o tipo da área'))
+// let area = parseInt(prompt('Digite a área a ser pulverizada'));
 // let valorTotal = 0;
  
 // if(tipo == 1){
@@ -97,10 +101,7 @@
 //     valorTotal -= desconto;
 // }
 
-//     return `O valor a ser pago é de: R$${valorTotal.toFixed(2)}`;
-
-// }
-// console.log(calculaPulverizacao(1, 100));
+// alert(`O valor a ser pago é de: R$${valorTotal.toFixed(2)}`);
 
 // EXERCICIO 9
 // let tempo = parseInt(prompt('Digite o tempo'));
@@ -115,7 +116,7 @@
 // let taxa = parseFloat(prompt('Digite o valor da taxa'));
 // let tempo = parseFloat(prompt('Digite o tempo de atraso'));
 // let prestacao = valor + (valor* (taxa/100) *tempo);
-// if (tempo === 0){
+// if (tempo === 0 || tempo % 100 !== 0){
 //     alert(`Valor inválido o tempo de atraso deve ser em dias`)
 // } else {
 //     alert(`R$ ${prestacao}`)
