@@ -116,7 +116,7 @@
 // let taxa = parseFloat(prompt('Digite o valor da taxa'));
 // let tempo = parseFloat(prompt('Digite o tempo de atraso'));
 // let prestacao = valor + (valor* (taxa/100) *tempo);
-// if (tempo === 0 || tempo % 100 !== 0){
+// if (tempo === 0 || tempo % 1 !== 0){
 //     alert(`Valor inválido o tempo de atraso deve ser em dias`)
 // } else {
 //     alert(`R$ ${prestacao}`)
